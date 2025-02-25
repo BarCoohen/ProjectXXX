@@ -21,6 +21,21 @@ h5,
 h6{
     font-family: 'rubik', Arial, sans-serif;
 }
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
 /* תפריט ניווט עליון */
 header{
     height: 3rem;
@@ -90,9 +105,9 @@ header{
 .stages{
     border-radius: 10px;
     background-color: white;
-    min-width: 18rem;
-    width: 15%;
-    height: 18rem;
+    min-width: 20rem;
+    width: 25%;
+    height: 20rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -102,6 +117,7 @@ header{
     transition: transform 0.5s ease-in-out; /* הופך את האנימציה לחלקה */
     position: relative;
 
+
     
 }
 .stages-container h3{
@@ -110,9 +126,6 @@ header{
     right: 0.5rem;
     position: absolute;
     text-align: right;
-    
-    
-
 }
 .stages-container h4{
     font-size: 1.8rem;
@@ -240,6 +253,7 @@ form פרטי יצירת קשר */
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 2rem 0;
 }
 
 .form-container-div{
@@ -249,12 +263,11 @@ form פרטי יצירת קשר */
     align-items: center;
     flex-direction: column;
     background: #ffffff;
-    margin: 0rem;
     padding: 1rem;
     border-radius: 10px;
-    max-width: 32rem;
-    min-width: 25rem;
-    border: 4px solid  black;
+    width: 30%;
+    min-width: 24rem;
+    height: 32rem;
 
 }
 
@@ -274,23 +287,52 @@ textarea{
     resize: none
 }
 
-button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 0.8rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #0056b3;
-}
 .form-container h3{
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.8rem;
 }
+/* הפונקציה אחרי שלוחצים שלח ב form */
+#thankYouMessage{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 24rem;
+    height: 32rem;
+    display: none;
+}
+#thankYouMessage button{
+    height: 15rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
