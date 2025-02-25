@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #f5f5f7;
+
+}
+p{
+    font-family: 'Varela', Arial, Helvetica, sans-serif;
+}
+/* תפריט ניווט עליון */
+header{
+    height: 3rem;
+}
+.navbar {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 1000;
+    border-radius: 1rem;
+    display: flex;  /* הופך את ה-navbar לקונטיינר גמיש */
+    justify-content: center; /* מרכז את התוכן אופקית */
+    align-items: center; /* מרכז את התוכן אנכית */
+    
+    
+   
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+    
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: #404344;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+    color: #000000; /* משנה צבע לאפור בעת ריחוף */
+}
+
+
+/* עמודה שמסבירה על השלבים של בנייה עם תמונה שמראה את השלבים */
+.section-3{
+    margin-top: 5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+
+}
+.stages-text{
+    width: 45%;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* משנה את הרווח בין הכותרת לטקסט */
+    padding-right: 1rem;
+    height: auto;
+    margin-bottom: 5rem;
+    
+}
+.stages-text h2{
+    font-size: 2rem;
+    font-family: 'rubik', Arial, sans-serif;
+    color: #000000;
+
+}
+.stages-text p{
+    font-size: 1.4rem;
+    color: #000000;
+}
+.stages{
+    height: auto;
+    min-width: 40rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ 
+}
+.stages .img-container{
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+
+}
+.stages img{
+    width: 50%;
+    transition: transform 0.5s ease-in-out;
+ 
+}
+
+.stages .img-container img:hover{
+    filter: brightness(1.4) contrast(1.3);
+    transform: scale(1.1);
+}
+.stages .small-img-container:hover{
+    filter: brightness(1.4) contrast(1.3);
+    
+}
+.stages .small-img-container {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* ממוקם מסביב לתמונה המרכזית */  
+    transition: transform 0.5s ease-in-out;
+    
+}
+.small-img-container .outside-img{
+    width: 80%;
+}
+.small-img-container .inside-img {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+}
+
+.small1 { bottom: calc(50% - 11rem); left: 50%; transform: translateX(-50%); }  /* למטה באמצע */
+.small2 { top: calc(50% - 7rem); left: calc(50% - 5rem); transform: translate(-50%, -50%); }  /* שמאל למעלה */
+.small3 { top: calc(50% - 7rem); right: calc(50% - 5rem); transform: translate(50%, -50%); } /* ימין למעלה */
+.small4 { bottom: calc(50% - 2rem); left: calc(50% - 7.5rem); transform: translate(-50%, 50%); } /* שמאל למטה */
+.small5 { bottom: calc(50% - 2rem); right: calc(50% - 7.5rem); transform: translate(50%, 50%); } /* ימין למטה */
+/* המשך של הלמעלה פשוט סידור הטקסטים ליד התמונות הקטנות */
+.stages .text-container {
+    position: absolute;
+    width: 8rem; /* גודל אחיד לכל התיבות */
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.stages .text-container h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+    color: #1d1d1f; /* צבע כהה יותר לכותרת */
+}
+
+.stages .text-container p {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #555; /* צבע בהיר יותר לטקסט */
+}
+.stages .text-container:hover{
+    filter: brightness(1.4) contrast(1.3);
+    
+}
+
+/* מיקום הטקסט ליד כל תמונה */
+.text1 { bottom: calc(50% - 15.5rem); left: 50%; transform: translateX(-50%); text-align: center;} /* מתחת לתמונה 1 */
+.text2 { top: calc(50% - 8rem); left: calc(50% - 12.5rem); transform: translate(-50%, -50%); } /* ליד תמונה 2 */
+.text3 { top: calc(50% - 7.5rem); right: calc(50% - 11rem); transform: translate(50%, -50%); } /* ליד תמונה 3 */
+.text4 { bottom: calc(50% - 4rem); left: calc(50% - 15rem); transform: translate(-50%, 50%); } /* ליד תמונה 4 */
+.text5 { bottom: calc(50% - 4rem); right: calc(50% - 15rem); transform: translate(50%, 50%); } /* ליד תמונה 5 */
+
+.stages .text1 h4{color: #a8dc34;}
+.stages .text2 h4{color: #f8943c;}
+.stages .text3 h4{color: #20c4fc;}
+.stages .text4 h4{color: #f864bc;}
+.stages .text5 h4{color: #48dc94;}
