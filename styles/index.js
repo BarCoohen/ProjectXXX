@@ -2,23 +2,13 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // מונע את השליחה הרגילה של הטופס
 
-    const nameInput = document.getElementById('name');
-    const nameValue = nameInput.value.trim();
-
-    // בדיקה אם השם מכיל רק אותיות בעברית או אנגלית ואורכו מעל 2 תווים
-    const namePattern = /^[a-zA-Z\u0590-\u05FF]{3,}$/;
-    if (!namePattern.test(nameValue)) {
-        alert('אנא הזן שם תקין המכיל רק אותיות בעברית או אנגלית ואורכו מעל 2 תווים.');
-        return;
-    }
-
     const numberInput = document.getElementById('number');
     const numberValue = numberInput.value.trim();
 
     // בדיקה אם הפלאפון מתחיל ב-05 ואורכו 10 תווים
     const phonePattern1 = /^05\d{1}-\d{7}$/;
     // בדיקה אם הפלאפון מתחיל במשהו אחר ואורכו 10 תווים
-    const phonePattern2 = /^\d{2}-\d{3,7}$/;
+    const phonePattern2 = /^\d{2}-\d{3,8}$/;
     if (!phonePattern1.test(numberValue) && !phonePattern2.test(numberValue)) {
         alert('אנא הזן מספר פלאפון תקין.');
         return;
