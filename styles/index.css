@@ -277,18 +277,28 @@ header{
 .feature-button{
     width: 100%;
     background-color: color-mix(in srgb, rgb(28, 28, 26), black 10%);
-    ;
-
     color: white;
     text-decoration: none;
     padding: 12px 0; /* מרווח אנכי */
-    display: block; /* הופך את הלינק לאלמנט בלוק */
-    text-align: right; /* מירכוז הטקסט */
+    display: flex;    
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
     padding-right: 10px;
-    border-radius: 0 0 20px 20px; /* עיגול רק בפינות התחתונות */
+    border-radius: 0 0 20px 20px;
     font-size: 1.2rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
+}
+.feature-button::after {
+    content: "\279C"; /* החץ */
+    transform: rotate(180deg);
+    display: inline-block; /* לא משתמשים במיקום מוחלט */
+    transition: transform 0.3s ease; /* אנימציה על החץ */
+    margin-right: 10px; 
+}
+.feature-button:hover::after {
+    transform: rotate(180deg) translateX(7px); /* הזזת החץ שמאלה בהובר תוך שמירה על הסיבוב */
 }
 .feature-button:hover {
     background-color: #333;
@@ -374,7 +384,7 @@ header{
   }
 
   .section-title-feature {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: right;
     margin-bottom: 20px;
     color: white;
@@ -438,7 +448,8 @@ header{
     min-width: 500px;
     border-radius: 24px;
     margin: 2rem;
-    position: relative; /* הוספת שורה זו */
+    position: relative;
+    
   }
   
   .feature-image {
@@ -452,7 +463,6 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    /* אין רקע – רק שקיפות, כדי שהאפקט יחול על מה שנמצא מאחוריו */
     background: transparent;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px); /* תמיכה בדפדפנים מסוימים */
@@ -482,8 +492,7 @@ header{
     opacity: 0;
     transition: opacity 1s ease-in-out; /* מעבר חלק לאורך 1 שניה */
 
-  }
-  
+  } 
   .feature-overlay button {
     background-color: rgba(255, 255, 255, 0.15);
     color: black;
@@ -607,7 +616,7 @@ header{
     
 }
 .stages-header h2{
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 .step-number{
     font-family: 'rubik', Arial, sans-serif;
@@ -632,6 +641,91 @@ header{
 .stages:hover{
     transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+
+
+/* עיצוב סקשן הטכנולוגיות */
+.technologies {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.technologies-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.technologies-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1c1c1a;
+}
+
+.technologies-header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tech-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
+
+.tech-item img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tech-desc {
+    position: absolute;
+    bottom: -10px;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: calc(100% - 20px);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+.tech-item:hover img {
+    transform: translateY(-10px);
+}
+
+.tech-item:hover .tech-desc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
 
 
 
