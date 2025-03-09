@@ -7,10 +7,23 @@ html{
     font-size: 16px;
 }
 body{
-    background-color: #000000;
+    background-color: rgb(28, 28, 26);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
 
 }
-p{
+main{
+    width: 100%;
+}
+p,
+li,
+ul li,
+button,
+a{
     font-family: 'Varela', Arial, Helvetica, sans-serif;
 }
 h1,
@@ -27,18 +40,29 @@ button {
     border: none;
     padding: 0.8rem;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 24px;
     cursor: pointer;
     width: 100%;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #0056b3;
+    filter: brightness(1.3);
 }
+
+
+
+
+
+
+
 /* תפריט ניווט עליון */
 header{
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
 }
 .navbar {
     background: rgba(255, 255, 255, 0.7);
@@ -48,7 +72,6 @@ header{
     width: 100%;
     height: 7%;
     z-index: 1000;
-    border-radius: 1rem;
     display: flex;  /* הופך את ה-navbar לקונטיינר גמיש */
     justify-content: center; /* מרכז את התוכן אופקית */
     align-items: center; /* מרכז את התוכן אנכית */
@@ -80,19 +103,484 @@ header{
     color: #000000; /* משנה צבע לאפור בעת ריחוף */
 }
 
+
+
+
+
+
+
+
+/* כותרת ראשית באנר */
+
+.banner {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00aaff;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(to bottom, #a3d5ff 0%, #cfe6f8 0%, #ffffff 100%); 
+    margin-bottom: 1rem;
+}
+  .banner-content {
+    width: 50%;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    color: black;
+  }
+  
+  .banner h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .banner h2 {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    margin: 0;
+    opacity: 0.8;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* רווח בין הכפתורים */
+    margin-top: 3rem; /* רווח מעל הכפתורים */
+    
+}
+.button-container button{
+    width: 250px;
+    height: 60px;
+    font-size: 1.5rem;
+
+}
+#button2{
+    background: white;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Varela', Arial, Helvetica, sans-serif;;
+}
+#button2:hover{
+    background: #007BFF;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* section 2 למה לבחור בנו */
+  .why-choose-us {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #2c2b2b;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 60%;
+    display: block; /* מוודא שהאלמנט יהיה בלוק */
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+
+
+
+
+/* השירותים שאנחנו מציעים */
+.our-services{
+    width: 100%;
+    background-color: white;
+}
+.our-services-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex; /* מוסיף הצגת flex */
+    flex-direction: column; /* סידור אנכי */
+    height: 35rem; /* מוודא שכל הכרטיסים באותו גובה */
+
+
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.feature-icon {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* ממרכז את האייקון אופקית */
+    border-radius: 20px 20px 0 0;
+}
+
+.feature h3{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.feature p {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #2c2b2b;
+    font-weight: bold;
+    flex-grow: 1; /* גורם לפסקה לתפוס את כל המקום הפנוי */
+
+}
+.feature-button{
+    width: 100%;
+    background-color: color-mix(in srgb, rgb(28, 28, 26), black 10%);
+    ;
+
+    color: white;
+    text-decoration: none;
+    padding: 12px 0; /* מרווח אנכי */
+    display: block; /* הופך את הלינק לאלמנט בלוק */
+    text-align: right; /* מירכוז הטקסט */
+    padding-right: 10px;
+    border-radius: 0 0 20px 20px; /* עיגול רק בפינות התחתונות */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.feature-button:hover {
+    background-color: #333;
+}
+/* עיצוב קופסאות השירותים */
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 2rem 3rem;
+    max-width: 100%;
+    margin: 1.5rem auto 0;
+}
+
+.service-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 1 / 1; /* יוצר קופסא מרובעת */
+    justify-content: center;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.service-box h4 {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+ /* איזה אתר מתאים לך?  */
+ .website-types {
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+}
+ .feature-section {
+   display: flex;
+   flex-direction: column;  
+   align-items: flex-end;  
+   justify-content: flex-end;  
+   flex: 1;
+   min-width: 0;
+   width: 80%;
+  }
+  .content-container{
+    width: 95%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-title-feature {
+    font-size: 2.5rem;
+    text-align: right;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .feature-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    border-radius: 24px;
+}
+  
+  .feature-details {
+    flex: 1;
+    margin: 2rem;
+    min-width: 400px;
+  }
+  
+  .feature-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .feature-elements{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: right;
+    margin-right: 2rem;
+  }
+  .landing-page-features{
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    
+  }
+  .landing-page-features li {
+    position: relative;
+  }
+
+  .landing-page-features li::before {
+    content: "✅";
+    position: absolute;
+    right: -25px; /* מיקום מימין */
+    top: 0;
+    font-size: 1rem;
+  }
+  .feature-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 500px;
+    border-radius: 24px;
+    margin: 2rem;
+    position: relative; /* הוספת שורה זו */
+  }
+  
+  .feature-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+  }
+  .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* אין רקע – רק שקיפות, כדי שהאפקט יחול על מה שנמצא מאחוריו */
+    background: transparent;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px); /* תמיכה בדפדפנים מסוימים */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* מעבר חלק לאורך 1 שניה */
+    z-index: 1;
+    border-radius: 24px;
+  }
+  
+  /* בעת hover – נציג את האלמנט עם ה-backdrop filter */
+  .feature-image-container:hover .backdrop {
+    opacity: 1;
+  }
+  
+  /* עיצוב ה-overlay עם הכפתורים */
+  .feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* מעבר חלק לאורך 1 שניה */
+
+  }
+  
+  .feature-overlay button {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: black;
+    transition: all 250ms ease;
+    border-radius: 20px;
+    width: 160px;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .feature-overlay button:hover{
+    background-color: white;
+    color: black;
+  }
+  .button-link {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: black;
+    transition: all 250ms ease;
+    border-radius: 20px;
+    width: 160px;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .button-link:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .feature-image-container:hover .feature-overlay {
+    opacity: 1; /* הופך לנראה */
+  }
+
+
+  /* ניווט צדדי */
+
+
+.side-navigation {
+    position: sticky;
+    top: 100px; /* מרחק מהקצה העליון */
+    height: fit-content;
+    width: 10%;
+    margin-right: 1rem;
+    z-index: 10;
+}
+
+.side-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-navigation li {
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.side-navigation a {
+    color: #484545;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.side-navigation a.active {
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+  
+
 /* השלבים לבניית אתר */
 .stages-container{
-    margin: 2rem 0;
+    margin-bottom: 1rem;
     text-align: center;
+    width: 100%;
 }
 .stages-header{
     background-color: white;
     text-align: center;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-}
-.stages-header h2{
-    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 .stages-content{
     width: 100%;
@@ -105,187 +593,99 @@ header{
 .stages{
     border-radius: 10px;
     background-color: white;
-    min-width: 20rem;
-    width: 25%;
-    height: 20rem;
+    min-width: 18rem;
+    width: 15%;
+    height: 28rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     padding: 1rem;
     transition: transform 0.5s ease-in-out; /* הופך את האנימציה לחלקה */
     position: relative;
-
-
     
 }
-.stages-container h3{
-    font-size: 2.5rem;
-    top: 0;
-    right: 0.5rem;
-    position: absolute;
-    text-align: right;
+.stages-header h2{
+    font-size: 2.8rem;
 }
-.stages-container h4{
+.step-number{
+    font-family: 'rubik', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #007BFF;
+    border-radius: 10px;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+
+}
+.stages-container h3{
     font-size: 1.8rem;
     border-bottom: 2px solid black;
 }
 .stages-container p{
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    text-align: right;
 }
 .stages:hover{
     transform: scale(1.05);
 }
 
 
-/* של בניית אתר תמונה שמראה את השלבים */
-.stages-photo{
-    width: 100%;
-    height: 34rem;
-    min-width: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 5rem;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
- 
-}
-.stages-photo .img-container{
-    width: 12rem;
-    height: 12rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: relative;
-
-}
-.stages-photo img{
-    width: 50%;
-    transition: transform 0.5s ease-in-out;
- 
-}
-
-.stages-photo .img-container img:hover{
-    filter: brightness(1.4) contrast(1.3);
-    transform: scale(1.1);
-}
-.stages-photo .small-img-container:hover{
-    filter: brightness(1.4) contrast(1.3);
-    
-}
-.stages-photo .small-img-container {
-    width: 8rem;
-    height: 8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; /* ממוקם מסביב לתמונה המרכזית */  
-    transition: transform 0.5s ease-in-out;
-    
-}
-.small-img-container .outside-img{
-    width: 80%;
-}
-.small-img-container .inside-img {
-    position: absolute;
-    text-align: center;
-    width: 50%;
-}
-
-.small1 { bottom: calc(50% - 11rem); left: 50%; transform: translateX(-50%); }  /* למטה באמצע */
-.small2 { top: calc(50% - 7rem); left: calc(50% - 5rem); transform: translate(-50%, -50%); }  /* שמאל למעלה */
-.small3 { top: calc(50% - 7rem); right: calc(50% - 5rem); transform: translate(50%, -50%); } /* ימין למעלה */
-.small4 { bottom: calc(50% - 2rem); left: calc(50% - 7.5rem); transform: translate(-50%, 50%); } /* שמאל למטה */
-.small5 { bottom: calc(50% - 2rem); right: calc(50% - 7.5rem); transform: translate(50%, 50%); } /* ימין למטה */
-/* המשך של הלמעלה פשוט סידור הטקסטים ליד התמונות הקטנות */
-.stages-photo .text-container {
-    position: absolute;
-    width: 8rem; /* גודל אחיד לכל התיבות */
-    font-size: 1rem;
-    color: #333;
-    font-weight: bold;
-    transition: transform 0.5s ease-in-out;
-    
-}
-
-.stages-photo .text-container h4 {
-    font-size: 1.6rem;
-    margin-bottom: 0.3rem;
-    color: #1d1d1f; /* צבע כהה יותר לכותרת */
-}
-
-.stages-photo .text-container p {
-    font-size: 1.1rem;
-    font-weight: normal;
-    color: #555; /* צבע בהיר יותר לטקסט */
-}
-.stages-photo .text-container:hover{
-    filter: brightness(1.4) contrast(1.3);
-    
-}
 
 
+/* footer */
 
-/* מיקום הטקסט ליד כל תמונה */
-.text1 { bottom: calc(50% - 15.5rem); left: 50%; transform: translateX(-50%); text-align: center;} /* מתחת לתמונה 1 */
-.text2 { top: calc(50% - 8rem); left: calc(50% - 12.5rem); transform: translate(-50%, -50%); } /* ליד תמונה 2 */
-.text3 { top: calc(50% - 7.5rem); right: calc(50% - 11rem); transform: translate(50%, -50%); } /* ליד תמונה 3 */
-.text4 { bottom: calc(50% - 4rem); left: calc(50% - 15rem); transform: translate(-50%, 50%); } /* ליד תמונה 4 */
-.text5 { bottom: calc(50% - 4rem); right: calc(50% - 15rem); transform: translate(50%, 50%); } /* ליד תמונה 5 */
 
-.stages-photo .text1 h4{color: #a8dc34;}
-.stages-photo .text2 h4{color: #f8943c;}
-.stages-photo .text3 h4{color: #20c4fc;}
-.stages-photo .text4 h4{color: #f864bc;}
-.stages-photo .text5 h4{color: #48dc94;}
-
-/* 
-form פרטי יצירת קשר */
+/* form פרטי יצירת קשר */ */
 .form-container {
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 2rem 0;
 }
 
 .form-container-div{
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
     flex-direction: column;
-    background: #ffffff;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 30%;
-    min-width: 24rem;
-    height: 32rem;
-
-}
-
-input, textarea {
     width: 100%;
-    padding: 0.8rem;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid  #4d4f52;
-    font-size: 1rem;
     
 }
-input:focus, textarea:focus {
-    border-bottom: 4px solid #000000;
+#contactForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
-textarea{
-    resize: none
+.form-group-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}.form-group-row ::placeholder{
+    color: black;
+    font-size: 1.2rem;
 }
+
+.form-group-row input{
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-right: 10px;
+    
+}
+.form-group button{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0;
+    font-size: 1.2rem;
+}
+
 
 .form-container h3{
     font-size: 1.5rem;
@@ -296,20 +696,159 @@ textarea{
 #thankYouMessage{
     display: flex;
     flex-direction: column;
-    gap: 8rem;
+    text-align: center;
     align-items: center;
-    background: #ffffff;
     padding: 1rem;
     margin: 1rem;
-    border-radius: 10px;
-    width: 30%;
-    min-width: 24rem;
-    height: 32rem;
+    width: 100%;
+    height: 30%;
     display: none;
 }
 #thankYouMessage button{
-    height: 15rem;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 15rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #1c1c1a;
+    color: white;
+    padding: 3rem 2rem;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.footer-column h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #00aaff;
+}
+
+/* רשימת צור קשר */
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.contact-list .icon {
+    font-size: 1.2rem;
+}
+
+
+
+/* אזור המידע והאייקונים */
+.footer-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.service-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.service-icons .icon {
     font-size: 2rem;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #00aaff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
 }
 
 
