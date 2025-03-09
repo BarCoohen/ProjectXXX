@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
 </head>
 <body>
     <!-- nav bar למעלה  -->
@@ -23,141 +25,352 @@
             </ul>
         </nav>
     </header>
-    <!-- פירוט על תהליך בניית האתר -->
+    <!-- כותרת ראשית עם כותרת משנית -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>בונים אתרים מעצבים חוויות ויוצרים תוצאות.</h1>
+            <h2>פיתוח אתרים מקצועיים, עיצוב שמשאיר רושם וקידום שמביא לקוחות</h2>
+            <div class="button-container">
+                <button id="button1">058-5209911</button>
+                <button id="button2">צרו קשר</button>
+            </div>
+        </div>
+        <dotlottie-player
+        src="https://lottie.host/fc6c6fb7-3dfd-4ced-ad3a-09228e788431/L3mcCI19ZO.json"
+        background="transparent"
+        speed="1"
+        style="width: 800px; height: 800px;"
+        loop
+        autoplay>
+        </dotlottie-player>
+    </section>
+    
     <main>
+        <!-- הסבר על מה אנחנו עושים ולמה אנחנו טובים בזה -->
+        <section class="why-choose-us">
+            <h2 class="section-title"> למה לבחור בנו? כי אנחנו עושים את זה אחרת.</h2>
+            <p class="section-description"><strong>
+                חברתנו היא השותף הדיגיטלי מהמובילים בישראל בתחום בניית אתרים, עיצוב וקידום אורגני. עם צוות מקצועי, יצירתי וקשוב, ובעלי ניסיון רב, אנו מחויבים ליצור עבורכם נוכחות אינטרנטית שאין לה תחרות
+                אנו מתמחים בפיתוח אתרים ייחודיים המותאמים לצרכים המדויקים שלכם, עם עיצובים מודרניים שמבליטים את זהות המותג וקידום אורגני שמביא תנועה איכותית. בכל שלב – מאיפיון ועד להשקה – אנו מלווים אתכם בצורה אישית ושקופה, כדי להבטיח שהתוצאה תהיה לא רק מרשימה, אלא גם אפקטיבית וממוקדת.
+                צרו עמנו קשר עוד היום לתיאום פגישת ייעוץ ואיפיון ללא התחייבות, ונגלה יחד איך להפוך את הרעיונות שלכם למציאות דיגיטלית מנצחת.</strong>
+            </p>
+        </section>
+        <section class="our-services">
+            <h2 class="our-services-title">השירותים שלנו</h2>
+            <div class="features">
+                <!-- פיתוח אתרים -->
+                <div class="feature">
+                    <img src="./styles/photos/ourservices/בניית אתרים.jpg" alt="פיתוח אתרים" class="feature-icon">
+                    <h3>בניית אתרים</h3>
+                    <p>בניית אתרים מקצועית, הנעשית על ידנו באופן אישי ובהתאמה מדויקת לצרכים ולמטרות של העסק שלך. תהליך העבודה כולל ליווי אישי, הקשבה מלאה לדרישות ולחזון שלך, והקפדה על בניית אתר מודרני, איכותי, ונוח לשימוש. המטרה שלי היא לייצר עבורך נוכחות דיגיטלית חזקה שתמשוך את הלקוחות המתאימים ותאפשר לך להתקדם ולהצליח ברשת</p>
+                    <a href="#" class="feature-button">למידע נוסף</a>
+                </div>
+        
+                <!-- קידום בגוגל -->
+                <div class="feature">
+                    <img src="./styles/photos/ourservices/Seoקידום.jpg" alt="קידום בגוגל" class="feature-icon">
+                    <h3>קידום אורגני בגוגל SEO</h3>
+                    <p>קידום אתרים איכותי שמטרתו להביא אותך למקומות הראשונים בגוגל. אני מקדם את האתר שלך באופן אישי, בעזרת מחקר מדויק והבנת הקהל שלך, כדי להבטיח שהלקוחות הנכונים ימצאו אותך בקלות. תהליך הקידום נעשה בשקיפות מלאה, עם דוחות ברורים ומעקב שוטף אחר התוצאות, כך שתמיד תדע איפה האתר שלך עומד ומה השלב הבא בדרך להצלחה</p>
+                    <a href="#" class="feature-button">למידע נוסף</a>
+                </div>
+        
+                <!-- עיצוב חוויית משתמש -->
+                <div class="feature">
+                    <img src="./styles/photos/ourservices/עיצוב גרפי.jpg" alt="עיצוב חוויית משתמש" class="feature-icon">
+                    <h3>עיצוב גרפי</h3>
+                    <p>עיצוב גרפי יצירתי ומקצועי בגישה אישית וידידותית, המותאם במיוחד לעסק שלך. אני אצור עבורך עיצוב ייחודי, מקורי, ובעל אופי שישקף בדיוק את מה שהעסק שלך מייצג. יחד נבחר את הסגנון, הצבעים והאווירה המתאימים, כך שהלקוחות שלך יתחברו למסר ולערכים של העסק כבר מהרגע הראשון.</p>
+                    <a href="#" class="feature-button">למידע נוסף</a>
+                </div>
+            </div>
+            <div class="service-boxes">
+                <!-- קופסא 1 -->
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="./styles/photos/ourservices/icons8-online-maintenance-portal-50.png" alt="אתרים רספונסיביים">
+                    </div>
+                    <h4>תחזוקת אתרים שוטפת</h4>
+                </div>
+                
+                <!-- קופסא 2 -->
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="./styles/photos/ourservices/icons8-website-50.png" alt="מהירות טעינה">
+                    </div>
+                    <h4>ניהול ואחסון אתרים</h4>
+                </div>
+                
+                <!-- קופסא 3 -->
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="./styles/photos/ourservices/icons8-content-writing-48.png" alt="אבטחת מידע">
+                    </div>
+                    <h4>ניהול תוכן וכתיבת תוכן לאתרים</h4>
+                </div>
+                
+                <!-- קופסא 4 -->
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="./styles/photos/ourservices/icons8-branding-48.png" alt="אנליטיקס ומעקב">
+                    </div>
+                    <h4>מיתוג עסקי ודיגיטלי מלא</h4>
+                </div>
+                
+                <!-- קופסא 5 -->
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="./styles/photos/ourservices/icons8-software-development-50.png" alt="תחזוקה שוטפת">
+                    </div>
+                    <h4>פיתוח תוכנות בהתאמה אישית</h4>
+                </div>
+                
+                <!-- קופסא 6 -->
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="./styles/photos/ourservices/icons8-automation-50.png" alt="תמיכה טכנית">
+                    </div>
+                    <h4>אוטומציות עסקיות</h4>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- סוגי אתרים שאנחנו בונים -->
+        <section class="website-types">
+            <nav class="side-navigation">
+                <ul>
+                    <li><a href="#landing-page" class="active">דף נחיתה</a></li>
+                    <li><a href="#business-page">אתר תדמית</a></li>
+                    <li><a href="#ecommerce-page">אתר מסחר מקוון</a></li>
+                    <li><a href="#custom-page">אתר מותאם אישית</a></li>
+                </ul>
+            </nav>
+            <div class="feature-section">
+                <div id="landing-page" class="content-container">
+                    <h2 class="section-title-feature">איזה אתר מתאים לך?</h2>
+                    <div class="feature-content">
+                        <!-- תוכן בצד ימין -->
+                        <div class="feature-details">
+                            <h3 class="feature-heading">דף נחיתה</h3>
+                            <p class="feature-subheading">דף נחיתה הוא עמוד אינטרנט יחיד וקצר שמטרתו המרכזית היא לגרום למבקרים לבצע פעולה ספציפית, כמו השארת פרטים, רכישה או הרשמה, בצורה מהירה ופשוטה. הוא מתאים במיוחד לקמפיינים שיווקיים, השקות מוצרים ואיסוף לידים מלקוחות פוטנציאליים.</p>
+                            <div class="feature-elements">
+                                <ul class="landing-page-features">
+                                    <li><strong>עמוד אחד בלבד</strong> – ללא דפים נוספים או הסחות דעת מיותרות.</li>
+                                    <li><strong>כותרת ראשית ברורה וחזקה</strong> – כדי לתפוס מיד את תשומת לב הגולש.</li>
+                                    <li><strong>הסבר קצר וברור</strong> – על המוצר או השירות.</li>
+                                    <li><strong>טופס יצירת קשר או הרשמה</strong> – לאיסוף פרטים מהמבקרים.</li>
+                                    <li><strong>תמונות או וידאו</strong> – שמסבירים במהירות את היתרונות של המוצר או השירות.</li>
+                                    <li><strong>כפתורי קריאה לפעולה (CTA)</strong> – ברורים ובולטים.</li>
+                                    <li><strong>קישורים לרשתות חברתיות</strong> – לחיזוק האמון וההוכחה החברתית.</li>
+                                    <li><strong>עדויות והמלצות</strong> – מלקוחות קיימים (אופציונלי, אך מומלץ).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- תמונה בצד שמאל -->
+                        <div class="feature-image-container">
+                            <img src="./styles/photos/סוגי אתרים/2004.i518.011_responsive landing page website mobile UI app templates.jpg" alt="תמונה תיאורית" class="feature-image">
+                            <!-- אלמנט ל-backdrop filter -->
+                            <div class="backdrop"></div>
+                            <div class="feature-overlay">
+                                <a href="#contact-form" class="button-link">צרו קשר</a>
+                                <button>לעוד פרטים</button>
+                            </div>
+                        </div>  
+                    </div>          
+                </div>
+                <div id="business-page" class="content-container">
+                    <div class="feature-content">
+                        <!-- תוכן בצד ימין -->
+                        <div class="feature-details">
+                            <h3 class="feature-heading">אתר תדמית</h3>
+                            <p class="feature-subheading">אתר תדמית הוא הפנים הדיגיטליות של החברה או המותג שלך. זה המקום שבו מציגים את זהות הארגון בצורה מקצועית, מבליטים את הערכים והחזון שלך, ויוצרים רושם ראשוני חיובי שגורם למבקרים להרגיש ביטחון וסקרנות. באמצעות עיצוב נקי, תוכן איכותי וכלים ויזואליים מתקדמים, האתר מספק פלטפורמה להצגת שירותים, פרויקטים והישגים, ומעודד מעורבות והתקשרות עם הקהל.</p>
+                            <div class="feature-elements">
+                                <ul class="landing-page-features">
+                                    <li><strong>עיצוב מקצועי ונקי</strong></li>
+                                    <li><strong>מבנה רב-עמוד</strong></li>
+                                    <li><strong>ניווט פשוט וברור</strong></li>
+                                    <li><strong>תוכן עשיר ואינפורמטיבי</strong></li>
+                                    <li><strong>גלריית מדיה (תמונות, סרטונים)</strong></li>
+                                    <li><strong>עדויות והמלצות</strong></li>
+                                    <li><strong>כפתורי קריאה לפעולה (CTA)</strong></li>
+                                    <li><strong>אופטימיזציה למנועי חיפוש (SEO)</strong></li>
+                                    <li><strong>אינטגרציות עם רשתות חברתיות</strong></li>
+                                    <li><strong>בלוג או עדכונים</strong></li>
+                                    <li><strong>טופס יצירת קשר</strong></li>
+                                    <li><strong>מערכת ניהול תוכן (CMS)</strong></li>
+                                    <li><strong>תמיכה ברספונסיביות</strong></li>
+                                    <li><strong>עיצוב מותאם למותג</strong></li>                           
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- תמונה בצד שמאל -->
+                        <div class="feature-image-container">
+                            <img src="./styles/photos/סוגי אתרים/4089262_88261.jpg" alt="תמונה תיאורית" class="feature-image">
+                            <!-- אלמנט ל-backdrop filter -->
+                            <div class="backdrop"></div>
+                            <div class="feature-overlay">
+                                <a href="#contact-form" class="button-link">צרו קשר</a>
+                                <button>לעוד פרטים</button>
+                            </div>
+                        </div>  
+                    </div>          
+                </div>
+                <div id="ecommerce-page" class="content-container">
+                    <div class="feature-content">
+                        <!-- תוכן בצד ימין -->
+                        <div class="feature-details">
+                            <h3 class="feature-heading">אתר מסחר מקוון / Ecommerce</h3>
+                            <p class="feature-subheading">אתר שמאפשר לך לנהל את החנות המקוונת בצורה פשוטה ויעילה</p>
+                            <div class="feature-elements">
+                                <ul class="landing-page-features">
+                                    <li><strong>העלאת וניהול מוצרים בקלות</strong></li>
+                                    <li><strong>ניהול מלאי בזמן אמת</strong></li>
+                                    <li><strong>אינטגרציה עם תוכנות ERP וניהול</strong></li>
+                                    <li><strong>שילוב אמצעי תשלום מאובטחים</strong></li>
+                                    <li><strong>ניהול הזמנות ומשלוחים</strong></li>
+                                    <li><strong>דוחות וניתוחים מתקדמים לניהול העסק</strong></li>
+                                    <li><strong>ניהול לקוחות, מועדוני לקוחות ונאמנות</strong></li>
+                                    <li><strong>הפעלת קופונים, מבצעים וקודי הנחה</strong></li>
+                                    <li><strong>ניהול ביקורות ודירוגי מוצרים</strong></li>
+                                    <li><strong>אופטימיזציה למנועי חיפוש (SEO)</strong></li>
+                                    <li><strong>אינטגרציה עם מערכות CRM ושיווק בדוא"ל</strong></li>
+                                    <li><strong>תמיכה במספר שפות ומטבעות</strong></li>
+                                    <li><strong>התאמה לעיצוב רספונסיבי וחוויית משתמש מתקדמת</strong></li>
+                                    <li><strong>ניהול החזרות, תלונות ושירות לקוחות (למשל, צ'אט חי)</strong></li>
+                                    <li><strong>מעקב משלוחים בזמן אמת</strong></li>
+                                    <li><strong>חיבור לאינטגרציות עם רשתות חברתיות</strong></li>
+                                    <li><strong>מערכת המלצות מוצרים ומבצעים מותאמים אישית</strong></li>
+                                    <li><strong>תמחור דינמי ומבצעי flash</strong></li>
+                                    <li><strong>ניהול חנויות נפרדות (Multi-store)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- תמונה בצד שמאל -->
+                        <div class="feature-image-container">
+                            <img src="./styles/photos/סוגי אתרים/showing-cart-trolley-shopping-online-sign-graphic.jpg" alt="תמונה תיאורית" class="feature-image">
+                            <!-- אלמנט ל-backdrop filter -->
+                            <div class="backdrop"></div>
+                            <div class="feature-overlay">
+                                <a href="#contact-form" class="button-link">צרו קשר</a>
+                                <button>לעוד פרטים</button>
+                            </div>
+                        </div>  
+                    </div>          
+                </div>
+                <div id="custom-page" class="content-container">
+                    <div class="feature-content">
+                        <!-- תוכן בצד ימין -->
+                        <div class="feature-details">
+                            <h3 class="feature-heading">אתר מותאם אישית / קוד</h3>
+                            <p class="feature-subheading">זהו אתר שנבנה מאפס תוך שימוש בקוד, על מנת להתאים בצורה מושלמת את העיצוב והפונקציונליות לצרכים הייחודיים של העסק או המותג שלך. היתרון הוא בגמישות מלאה, יכולת להוסיף תכונות מתקדמות ואינטגרציות מיוחדות, ובניית אתר שמשקף בצורה מדויקת את זהות המותג.</p>
+                            <div class="feature-elements">
+                                <ul class="landing-page-features">
+                                    <li><strong>קוד מותאם אישית</strong></li>
+                                    <li><strong>עיצוב ייחודי ומותאם למותג</strong></li>
+                                    <li><strong>התאמה מלאה לצרכי העסק</strong></li>
+                                    <li><strong>פיתוח רספונסיבי</strong></li>
+                                    <li><strong>ביצועים ואופטימיזציה מקסימלית</strong></li>
+                                    <li><strong>אינטגרציות API מתקדמות</strong></li>
+                                    <li><strong>אבטחה מתקדמת ומוגנת</strong></li>
+                                    <li><strong>מערכת ניהול תוכן (CMS) מותאמת אישית</strong></li>
+                                    <li><strong>התאמה למנועי חיפוש (SEO)</strong></li>
+                                    <li><strong>תחזוקה ועדכונים שוטפים</strong></li>
+                                    <li><strong>תמיכה טכנית והדרכה</strong></li>
+                                    <li><strong>התאמה לטכנולוגיות ולמכשירים חדשים</strong></li>                              
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- תמונה בצד שמאל -->
+                        <div class="feature-image-container">
+                            <img src="./styles/photos/סוגי אתרים/programming-background-collage.jpg" alt="תמונה תיאורית" class="feature-image">
+                            <!-- אלמנט ל-backdrop filter -->
+                            <div class="backdrop"></div>
+                            <div class="feature-overlay">
+                                <a href="#contact-form" class="button-link">צרו קשר</a>
+                                <button>לעוד פרטים</button>
+                            </div>
+                        </div>  
+                    </div>          
+                </div>
+            </div>
+        </section>
+
+
+        <!-- פירוט על תהליך בניית האתר -->
         <section class="stages-container">
             <div class="stages-header">
                 <h2>מרעיון למציאות – הדרך לבניית אתר מקצועי</h2>
             </div>
             <div class="stages-content">
                 <article class="stages">
-                    <h3>1</h3>
-                    <h4>הגדרת מטרה 🎯</h4>
-                    <p>לפני שמתחילים לבנות אתר, חשוב להבין למה הוא נועד. בשלב זה:<br>
+                    <div class="step-number">1</div>
+                    <h3>הגדרת מטרה 🎯</h3>
+                    <p><strong>לפני שמתחילים לבנות אתר, חשוב להבין למה הוא נועד. בשלב זה:</strong><br>
 
-                        מגדירים את המטרות המרכזיות של האתר (למשל: מכירה, תדמית, מידע).<br>
-                        מזהים את קהל היעד – מי הולך להשתמש באתר? מהם הצרכים שלהם?<br>
-                        מחליטים אילו מסרים חשובים שיעברו דרך האתר כדי למשוך את הקהל הנכון.
+                        • מגדירים את המטרות המרכזיות של האתר (למשל: מכירה, תדמית, דף נחיתה).<br>
+                        • מזהים את קהל היעד – מי הולך להשתמש באתר? מהם הצרכים שלהם?<br>
+                        • מחליטים אילו מסרים חשובים שיעברו דרך האתר כדי למשוך את הקהל הנכון.
                     </p>
                 </article>
                 <article class="stages">
-                    <h3>2</h3>
-                    <h4>תכנון 📝</h4>
-                    <p>שלב התכנון כולל בניית אסטרטגיה ברורה לאתר:<br>
+                    <div class="step-number">2</div>
+                    <h3>תכנון 📝</h3>
+                    <p><strong>שלב התכנון כולל בניית אסטרטגיה ברורה לאתר:</strong><br>
 
-                        יצירת מבנה האתר – כמה דפים יהיו, איך הם יהיו מחוברים?<br>
-                        אפיון חוויית משתמש (UX) – לוודא שהגלישה באתר תהיה נוחה ואינטואיטיבית.<br>
-                        בחירת פלטפורמה מתאימה (WordPress, קוד מותאם אישית, Shopify וכו').<br>
-                        סקיצות ראשוניות (Wireframes) שימחישו את המבנה הכללי של האתר.
+                        • יצירת מבנה האתר – כמה דפים יהיו, איך הם יהיו מחוברים?<br>
+                        • אפיון חוויית משתמש (UX) – לוודא שהגלישה באתר תהיה נוחה ואינטואיטיבית.<br>
+                        • בחירת פלטפורמה מתאימה (WordPress, קוד מותאם אישית, Shopify וכו').<br>
+                        • סקיצות ראשוניות (Wireframes) שימחישו את המבנה הכללי של האתר.
                     </p>
                 </article>
                 <article class="stages">
-                    <h3>3</h3>
-                    <h4>עיצוב ייחודי 🎨</h4>
-                    <p>זה החלק שבו האתר מקבל זהות ויזואלית שמתאימה למותג:<br>
+                    <div class="step-number">3</div>
+                    <h3>עיצוב ייחודי 🎨</h3>
+                    <p><strong>זה החלק שבו האתר מקבל זהות ויזואלית שמתאימה למותג:</strong><br>
 
-                        בחירת צבעים, פונטים ואלמנטים גרפיים שמתחברים למיתוג העסקי.<br>
-                        יצירת חוויית משתמש מושכת ונוחה, כך שהמבקרים ירגישו רצון להישאר באתר.<br>
-                        התאמת האתר לכל סוגי המכשירים – דסקטופ, טאבלט, מובייל.<br>
-                        הוספת תמונות ואנימציות כדי להפוך את האתר לחי ודינמי.
+                        • בחירת צבעים, פונטים ואלמנטים גרפיים שמתחברים למיתוג העסקי.<br>
+                        • יצירת חוויית משתמש מושכת ונוחה, כך שהמבקרים ירגישו רצון להישאר באתר.<br>
+                        • התאמת האתר לכל סוגי המכשירים – דסקטופ, טאבלט, מובייל.<br>
+                        • הוספת תמונות ואנימציות כדי להפוך את האתר לחי ודינמי.
                     </p>
                 </article>
                 <article class="stages">
-                    <h3>4</h3>
-                    <h4>יצירת תוכן ✍️</h4>
-                    <p>ללא תוכן איכותי, אתר לא ימשוך מבקרים!<br>
+                    <div class="step-number">4</div>
+                    <h3>יצירת תוכן ✍️</h3>
+                    <p><strong>ללא תוכן איכותי, אתר לא ימשוך מבקרים!</strong><br>
 
-                        כתיבת טקסטים ברורים, רלוונטיים ואטרקטיביים שמדברים לקהל היעד.<br>
-                        שימוש ב-SEO (אופטימיזציה למנועי חיפוש) כדי שהאתר יופיע גבוה בגוגל.<br>
-                        שילוב תמונות וסרטונים כדי להפוך את האתר לאינפורמטיבי ומעניין יותר.<br>
-                        קריאות לפעולה (CTA) ברורות – הנעה לפעולה כמו "צרו קשר", "קנו עכשיו".
+                        • כתיבת טקסטים ברורים, רלוונטיים ואטרקטיביים שמדברים לקהל היעד.<br>
+                        • שימוש ב-SEO (אופטימיזציה למנועי חיפוש) כדי שהאתר יופיע גבוה בגוגל.<br>
+                        • שילוב תמונות וסרטונים כדי להפוך את האתר לאינפורמטיבי ומעניין יותר.<br>
+                        • קריאות לפעולה (CTA) ברורות – הנעה לפעולה כמו "צרו קשר", "קנו עכשיו".
                     </p>
                 </article>
                 <article class="stages">
-                    <h3>5</h3>
-                    <h4>השקה 🚀</h4>
-                    <p>השלב שבו האתר הופך לזמין לכולם!<br>
+                    <div class="step-number">5</div>
+                    <h3>השקה 🚀</h3>
+                    <p><strong>השלב שבו האתר הופך לזמין לכולם!</strong><br>
 
-                        ביצוע בדיקות אחרונות לוודא שהכול עובד כמו שצריך.<br>
-                        בדיקות מהירות טעינה, התאמה למובייל ושימושיות.<br>
-                        העלאת האתר לשרת והפיכתו לנגיש לכלל המשתמשים.<br>
-                        מעקב אחר נתוני האתר (דרך Google Analytics, לדוגמה) ושיפור מתמיד לפי הצורך.
+                        • ביצוע בדיקות אחרונות לוודא שהכול עובד כמו שצריך.<br>
+                        • בדיקות מהירות טעינה, התאמה למובייל ושימושיות.<br>
+                        • העלאת האתר לשרת והפיכתו לנגיש לכלל המשתמשים.<br>
+                        • מעקב אחר נתוני האתר (דרך Google Analytics, לדוגמה) ושיפור מתמיד לפי הצורך.
                     </p>
                 </article>
             </div>
         </section>
-        <!-- פירוט על תהליך בניית האתר עם תמונה -->
-        <section class="stages-photo">
-            <div class="img-container">
-            <img src="./styles/photos/תמונות stages/logo 1.png" alt="">
-            </div>
-            <div class="small-img-container small1">
-                <img class="outside-img" src="./styles/photos/תמונות stages/הכי למטה.png" alt="">
-                <img class="inside-img" src="./styles/photos/תמונות stages/logo yello.png" alt="">
-            </div>
-            <div class="text-container text1">
-                <h4>יצירת תוכן</h4>
-                <p>יצירת תוכן מעניין ורלוונטי לאתר</p>
-            </div>
+ 
+
         
-            <div class="small-img-container small2">
-                <img class="outside-img" src="./styles/photos/תמונות stages/למעלה שמאל.png" alt="">
-                <img class="inside-img" src="./styles/photos/תמונות stages/logo 2 orange.png" alt="">
-            </div>
-            <div class="text-container text2">
-                <h4>השקה</h4>
-                <p>האתר החדש מוכן ועולה לאוויר</p>
-            </div>
-        
-            <div class="small-img-container small3">
-                <img class="outside-img"src="./styles/photos/תמונות stages/למעלה ימין.png" alt="">
-                <img class="inside-img" src="./styles/photos/תמונות stages/logo blue.png" alt="">
-            </div>
-            <div class="text-container text3">
-                <h4>תכנון</h4>
-                <p>ארגון רעיונות ומשאבים לאתר האינטרנט</p>
-            </div>
-        
-            <div class="small-img-container small4">
-                <img class="outside-img"src="./styles/photos/תמונות stages/שמאל למטה.png" alt="">
-                <img class="inside-img" src="./styles/photos/תמונות stages/logopink.png" alt="">
-            </div>
-            <div class="text-container text4">
-                <h4>עיצוב</h4>
-                <p>עיצוב מקצועי ומושך  עם דגש על חוויית משתמש מעולה ומיתוג ייחודי</p>
-            </div>
-        
-            <div class="small-img-container small5">
-                <img class="outside-img" src="./styles/photos/תמונות stages/למטה ימין.png" alt="">
-                <img class="inside-img" src="./styles/photos/תמונות stages/logo green.png" alt="">
-            </div>
-            <div class="text-container text5">
-                <h4>הגדרת מטרה</h4>
-                <p>להגדיר את המטרות המרכזיות של האתר ולזהות את קהל היעד</p>
-            </div>
-        </section>
-        
-        <!-- form של צרו קשר -->
-        <section class="form-container">
+    </main>
+    <footer class="site-footer">
+        <div id="contact-form" class="form-container">
             <div class="form-container-div" id="contactFormContainer">
                 <h3>רוצים לשמוע עוד? השאירו פרטים ונחזור אליכם עם כל המידע!</h3>
                 <form id="contactForm" action="submit.php" method="POST">
-                    <div class="form-group">
+                    <div class="form-group-row">
                         <input type="text" id="name" name="name" placeholder="שם:" required>
-                    </div>
-                    <br>
-                    <div class="form-group">
                         <input type="text" id="number" name="number" placeholder="פלאפון:" required>
+                        <input type="email" id="email" name="email" placeholder="דוא״ל: (לא חובה)">
                     </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="אימייל: (לא חובה)">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="6" cols="20" placeholder="הודעה:(לא חובה)"></textarea>
-                    </div>
-                    <br>
                     <div class="form-group">
                         <button type="submit">שלח</button>
                     </div>
@@ -167,9 +380,72 @@
                 <h3>תודה שפנית אלינו!<br> ההודעה שלך התקבלה בהצלחה. נחזור אליך בהקדם האפשרי.</h3>
                 <button id="backToFormButton">חזרה לטופס</button>
             </div>
-        </section>
-    </main>
-    
+        </div>
+        <div class="footer-container">
+            <!-- עמודה 1 - תפריט -->
+            <div class="footer-column">
+                <h4>תפריט</h4>
+                <ul>
+                    <li><a href="#">דף הבית</a></li>
+                    <li><a href="#website-types">סוגי אתרים</a></li>
+                    <li><a href="#stages-container">תהליך העבודה</a></li>
+                    <li><a href="#why-choose-us">למה לבחור בנו</a></li>
+                    <li><a href="#contact-form">צור קשר</a></li>
+                </ul>
+            </div>
+            
+            <!-- עמודה 2 - מאמרים -->
+            <div class="footer-column">
+                <h4>מאמרים</h4>
+                <ul>
+                    <li><a href="#">איך לבחור אתר מתאים לעסק</a></li>
+                    <li><a href="#">טיפים לקידום אתר בגוגל</a></li>
+                    <li><a href="#">הבדלים בין אתר תדמית לדף נחיתה</a></li>
+                    <li><a href="#">כל מה שצריך לדעת על מסחר אלקטרוני</a></li>
+                    <li><a href="#">עיצוב אתרים - טרנדים לשנת 2025</a></li>
+                </ul>
+            </div>
+            
+            <!-- עמודה 3 - צור קשר (עם רשימה במקום טופס) -->
+            <div class="footer-column">
+                <h4>צור קשר</h4>
+                <ul class="contact-list">
+                    <li><span class="icon">📱</span> טלפון: 058-5209911</li>
+                    <li><span class="icon">✉️</span> אימייל: info@yoursite.com</li>
+                    <li><span class="icon">⏰</span> שעות פעילות: א'-ה' 9:00-18:00</li>
+                    <li><span class="icon">📍</span> כתובת: רחוב הדוגמה 123, תל אביב</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- מידע נוסף ואייקונים -->
+        <div class="footer-info">
+            <div class="footer-icons">
+                <div class="service-icons">
+                    <span class="icon">🛠️</span>
+                    <span class="icon">🚀</span>
+                    <span class="icon">🔍</span>
+                </div>
+                <div class="contact-details">
+                    <a href="https://facebook.com" class="social-icon">
+                        <img src="./styles/photos/icons/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" class="social-icon">
+                        <img src="./styles/photos/icons/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="mailto:info@yoursite.com" class="contact-link">
+                        <span class="icon">✉️</span> info@yoursite.com
+                    </a>
+                    <a href="tel:0585209911" class="contact-link">
+                        <span class="icon">📞</span> 058-5209911
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 כל הזכויות שמורות</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./styles/index.js"></script>
 
